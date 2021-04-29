@@ -1,0 +1,366 @@
+Using pre-set license
+
+ COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2020.3.6f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/mikescomputer/Desktop/GitHubs/Gauntlet/Gauntlet
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+50804
+Successfully changed project path to: /Users/mikescomputer/Desktop/GitHubs/Gauntlet/Gauntlet
+/Users/mikescomputer/Desktop/GitHubs/Gauntlet/Gauntlet
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 35.17 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.6f1 (338bb68529b2)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.6f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/mikescomputer/Desktop/GitHubs/Gauntlet/Gauntlet/Assets
+GfxDevice: creating device client; threaded=0
+2021-04-29 16:04:54.720 Unity[84904:1485789] Color LCD preferred device: Intel(R) Iris(TM) Graphics 6000 (low power)
+2021-04-29 16:04:54.720 Unity[84904:1485789] Metal devices available: 1
+2021-04-29 16:04:54.720 Unity[84904:1485789] 0: Intel(R) Iris(TM) Graphics 6000 (low power)
+2021-04-29 16:04:54.720 Unity[84904:1485789] Using device Intel(R) Iris(TM) Graphics 6000 (low power)
+Initializing Metal device caps: Intel(R) Iris(TM) Graphics 6000
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.6f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.6f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.3.6f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56904
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.6f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.6f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.6f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.6f1/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.6f1/PlaybackEngines/LuminSupport/UnityEditor.Lumin.Extensions.dll
+Registered in 0.010392 seconds.
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 31.09 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  5.757 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002126 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.377 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.6f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.24 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1117 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 112.8 MB.
+System memory in use after: 112.8 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1559.
+Total: 5.134198 ms (FindLiveObjects: 0.425840 ms CreateObjectMapping: 0.077366 ms MarkObjects: 4.488762 ms  DeleteObjects: 0.139802 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Fighter Pack Bundle FREE
+  artifactKey: Guid(21638dca7a1b1424aaaa4b3a85fe6faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fighter Pack Bundle FREE using Guid(21638dca7a1b1424aaaa4b3a85fe6faa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a972209cfb8d30d3ab84b43e20a76032') in 0.004932 seconds
+  Import took 0.007885 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000296 seconds.
+  path: Assets/Fighter Pack Bundle FREE/Code/FighterAnimationDemoFREE.cs
+  artifactKey: Guid(7f7ef17c21ec457409514db055acb92a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fighter Pack Bundle FREE/Code/FighterAnimationDemoFREE.cs using Guid(7f7ef17c21ec457409514db055acb92a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ea3b660bc0000113cfeedeaa4d9c06b') in 4.170340 seconds
+  Import took 4.172866 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000407 seconds.
+  path: Assets/Fighter Pack Bundle FREE/Code
+  artifactKey: Guid(c1a8f84f06108ae47914df762b731eee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fighter Pack Bundle FREE/Code using Guid(c1a8f84f06108ae47914df762b731eee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c9b382b212af0cf66559ca37f16689e') in 0.002268 seconds
+  Import took 0.005569 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.737539 seconds.
+  path: Assets/Fighter Pack Bundle FREE/Heavy Fighter Mecanim Animation Pack FREE
+  artifactKey: Guid(67d0eb363fc03cd45968959d03500cea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fighter Pack Bundle FREE/Heavy Fighter Mecanim Animation Pack FREE using Guid(67d0eb363fc03cd45968959d03500cea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63538dc16249b794f1123a5028ae8877') in 0.002247 seconds
+  Import took 0.007188 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.234537 seconds.
+  path: Assets/Fighter Pack Bundle FREE/Heavy Fighter Mecanim Animation Pack FREE/Scenes
+  artifactKey: Guid(88f80d369f5c7e342b113e2319953e6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fighter Pack Bundle FREE/Heavy Fighter Mecanim Animation Pack FREE/Scenes using Guid(88f80d369f5c7e342b113e2319953e6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3a93d08597a8576a1d5ee2840b5c4b7') in 0.002526 seconds
+  Import took 0.006636 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.301513 seconds.
+  path: Assets/Fighter Pack Bundle FREE/Heavy Fighter Mecanim Animation Pack FREE/Scenes/Heavy.unity
+  artifactKey: Guid(62296ca581e16ad4bbb76c93e5c74357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fighter Pack Bundle FREE/Heavy Fighter Mecanim Animation Pack FREE/Scenes/Heavy.unity using Guid(62296ca581e16ad4bbb76c93e5c74357) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07dbce7727b83a9adad8bec17763d804') in 0.013306 seconds
+  Import took 0.016896 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 127.571808 seconds.
+  path: Assets/Fighter Pack Bundle FREE/Heavy Fighter Mecanim Animation Pack FREE/Animations
+  artifactKey: Guid(a81ea667581fdd942b7f82f98e91868d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fighter Pack Bundle FREE/Heavy Fighter Mecanim Animation Pack FREE/Animations using Guid(a81ea667581fdd942b7f82f98e91868d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b285c2b2ffb5752a47a1464ebae70b92') in 0.002348 seconds
+  Import took 0.004634 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.068324 seconds.
+  path: Assets/Fighter Pack Bundle FREE/Heavy Fighter Mecanim Animation Pack FREE/Animations/Heavy@Idle.FBX
+  artifactKey: Guid(d0d3809b813aa0b4f90429d5587583f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fighter Pack Bundle FREE/Heavy Fighter Mecanim Animation Pack FREE/Animations/Heavy@Idle.FBX using Guid(d0d3809b813aa0b4f90429d5587583f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f0aea9e921b99dff500198172111575') in 1.475698 seconds
+  Import took 1.479200 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/Fighter Pack Bundle FREE/Heavy Fighter Mecanim Animation Pack FREE/Animations/Heavy@WalkForward.FBX
+  artifactKey: Guid(625dee4eb35dcee4280d5bcea189b903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fighter Pack Bundle FREE/Heavy Fighter Mecanim Animation Pack FREE/Animations/Heavy@WalkForward.FBX using Guid(625dee4eb35dcee4280d5bcea189b903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33ca63f833f95f42c5319f6821151160') in 0.015628 seconds
+  Import took 0.020025 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000388 seconds.
+  path: Assets/Fighter Pack Bundle FREE/Heavy Fighter Mecanim Animation Pack FREE/Animations/Heavy@Punch.FBX
+  artifactKey: Guid(27a6a9f585a42884db1c7631777bc9bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fighter Pack Bundle FREE/Heavy Fighter Mecanim Animation Pack FREE/Animations/Heavy@Punch.FBX using Guid(27a6a9f585a42884db1c7631777bc9bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5320c2dcfb439c22945f8897a8b65d9f') in 0.016065 seconds
+  Import took 0.019244 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/Fighter Pack Bundle FREE/Heavy Fighter Mecanim Animation Pack FREE/Animations/Heavy@WalkBackward.FBX
+  artifactKey: Guid(ef4187767e14bbd438989757f2cde274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fighter Pack Bundle FREE/Heavy Fighter Mecanim Animation Pack FREE/Animations/Heavy@WalkBackward.FBX using Guid(ef4187767e14bbd438989757f2cde274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af565898b0250e8bc0c95a8293925fb4') in 0.018318 seconds
+  Import took 0.022852 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001600 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.23 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.243 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1112 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 121.8 MB.
+System memory in use after: 121.9 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1562.
+Total: 3.808240 ms (FindLiveObjects: 0.402912 ms CreateObjectMapping: 0.126840 ms MarkObjects: 3.114106 ms  DeleteObjects: 0.161867 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.704375 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(1b3defa3ba3a94946a5d56a44d9c9d49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(1b3defa3ba3a94946a5d56a44d9c9d49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e40bb73ba93731861c0a25e8acaebec') in 0.004584 seconds
+  Import took 0.007105 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.056981 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe419b6149a5639f9ac509c120a6676d') in 0.011555 seconds
+  Import took 0.013958 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009846 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe419b6149a5639f9ac509c120a6676d') in 0.003593 seconds
+  Import took 0.006372 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.687163 seconds.
+  path: Assets/Kevin Iglesias
+  artifactKey: Guid(4604ebdf35c59437f951c1bcd928503b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias using Guid(4604ebdf35c59437f951c1bcd928503b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'add9360e25fc3513b4def888542d53f0') in 0.001898 seconds
+  Import took 0.004580 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.814428 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions
+  artifactKey: Guid(2cb279c410b7a3e4dbf4aab42283effa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions using Guid(2cb279c410b7a3e4dbf4aab42283effa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5e978360954154f4f6f711fb7a8cdb1') in 0.005965 seconds
+  Import took 0.009727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.467750 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Models
+  artifactKey: Guid(c310a300a0358f94f81e0eeb585d6cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Models using Guid(c310a300a0358f94f81e0eeb585d6cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2621534de7a475fab71bf5b07687e954') in 0.001901 seconds
+  Import took 0.006211 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.101468 seconds.
+  path: Assets/Kevin Iglesias/Basic Motions/Models/BasicMotionsDummyModel.fbx
+  artifactKey: Guid(5917c0e93d180a842b61d1ebc62a195c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Kevin Iglesias/Basic Motions/Models/BasicMotionsDummyModel.fbx using Guid(5917c0e93d180a842b61d1ebc62a195c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5281b0159cf7423d6e2b819058628a6d') in 0.950424 seconds
+  Import took 0.955003 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 83.593490 seconds.
+  path: Assets/Fighter Pack Bundle FREE/Berserker Fighter Mecanim Animation Pack FREE/Prefabs/Berserker.prefab
+  artifactKey: Guid(fbf89d03afc7fb848af45a6cf9c83d98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fighter Pack Bundle FREE/Berserker Fighter Mecanim Animation Pack FREE/Prefabs/Berserker.prefab using Guid(fbf89d03afc7fb848af45a6cf9c83d98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f36bd2d44e69c63332d5a869d14516d3') in 0.785596 seconds
+  Import took 0.792060 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.020596 seconds.
+  path: Assets/Fighter Pack Bundle FREE/Berserker Fighter Mecanim Animation Pack FREE/Prefabs/Berserker.prefab
+  artifactKey: Guid(fbf89d03afc7fb848af45a6cf9c83d98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fighter Pack Bundle FREE/Berserker Fighter Mecanim Animation Pack FREE/Prefabs/Berserker.prefab using Guid(fbf89d03afc7fb848af45a6cf9c83d98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f36bd2d44e69c63332d5a869d14516d3') in 0.052335 seconds
+  Import took 0.058564 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.242628 seconds.
+  path: Assets/Fighter Pack Bundle FREE/Berserker Fighter Mecanim Animation Pack FREE/Prefabs/Berserker Animation Controller.controller
+  artifactKey: Guid(8f2f5123e7b753b44ad9b59d61095cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fighter Pack Bundle FREE/Berserker Fighter Mecanim Animation Pack FREE/Prefabs/Berserker Animation Controller.controller using Guid(8f2f5123e7b753b44ad9b59d61095cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e36e0d86308d1104a7f9f995e7667951') in 0.361161 seconds
+  Import took 0.367611 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 88.596907 seconds.
+  path: Assets/Fighter Pack Bundle FREE/Berserker Fighter Mecanim Animation Pack FREE/Animations
+  artifactKey: Guid(afb5bde251787a4418dcdef3d5b179cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fighter Pack Bundle FREE/Berserker Fighter Mecanim Animation Pack FREE/Animations using Guid(afb5bde251787a4418dcdef3d5b179cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6220a60096ef2dc82d974abbc4056346') in 0.001968 seconds
+  Import took 0.004423 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.087340 seconds.
+  path: Assets/Fighter Pack Bundle FREE/Berserker Fighter Mecanim Animation Pack FREE/Animations/Berserker@Idle.FBX
+  artifactKey: Guid(cd6b8800735c1234fa390689961beb00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fighter Pack Bundle FREE/Berserker Fighter Mecanim Animation Pack FREE/Animations/Berserker@Idle.FBX using Guid(cd6b8800735c1234fa390689961beb00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bb08ad0350012fb8cc75a330106c2e2') in 0.018898 seconds
+  Import took 0.024408 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000354 seconds.
+  path: Assets/Fighter Pack Bundle FREE/Berserker Fighter Mecanim Animation Pack FREE/Animations/Berserker@Punch.FBX
+  artifactKey: Guid(32c188adf73f86148880cd1517bb3cb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fighter Pack Bundle FREE/Berserker Fighter Mecanim Animation Pack FREE/Animations/Berserker@Punch.FBX using Guid(32c188adf73f86148880cd1517bb3cb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4945ad92cbc91d26c365279989a60ebb') in 0.013219 seconds
+  Import took 0.017366 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000353 seconds.
+  path: Assets/Fighter Pack Bundle FREE/Berserker Fighter Mecanim Animation Pack FREE/Animations/Berserker@WalkForward.FBX
+  artifactKey: Guid(b1afb1a8906792749986c8e7514a1796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fighter Pack Bundle FREE/Berserker Fighter Mecanim Animation Pack FREE/Animations/Berserker@WalkForward.FBX using Guid(b1afb1a8906792749986c8e7514a1796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61527d3e2e62dc71fbff9aa2350e9df4') in 0.017106 seconds
+  Import took 0.019924 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Fighter Pack Bundle FREE/Berserker Fighter Mecanim Animation Pack FREE/Animations/Berserker@WalkBackward.FBX
+  artifactKey: Guid(23e3d559b1762c245982219913be8dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fighter Pack Bundle FREE/Berserker Fighter Mecanim Animation Pack FREE/Animations/Berserker@WalkBackward.FBX using Guid(23e3d559b1762c245982219913be8dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7b29017b9ddbaad7b767c796e5cab10') in 0.013071 seconds
+  Import took 0.018552 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000400 seconds.
+  path: Assets/Fighter Pack Bundle FREE/Berserker Fighter Mecanim Animation Pack FREE/Animations/Berserker@WalkForward.FBX
+  artifactKey: Guid(b1afb1a8906792749986c8e7514a1796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fighter Pack Bundle FREE/Berserker Fighter Mecanim Animation Pack FREE/Animations/Berserker@WalkForward.FBX using Guid(b1afb1a8906792749986c8e7514a1796) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61527d3e2e62dc71fbff9aa2350e9df4') in 0.011827 seconds
+  Import took 0.015202 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.377509 seconds.
+  path: Assets/Fighter Pack Bundle FREE/Berserker Fighter Mecanim Animation Pack FREE/BerserkerFighterMecanimAnimationPackReadme.pdf
+  artifactKey: Guid(1bc9c56041811294287e0d537d148cc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fighter Pack Bundle FREE/Berserker Fighter Mecanim Animation Pack FREE/BerserkerFighterMecanimAnimationPackReadme.pdf using Guid(1bc9c56041811294287e0d537d148cc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efb985c4e08d7f1632e81bd9ed93e758') in 0.949961 seconds
+  Import took 0.953198 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.066505 seconds.
+  path: Assets/Fighter Pack Bundle FREE/Berserker Fighter Mecanim Animation Pack FREE/Characters
+  artifactKey: Guid(701406140bac0a448b67057afb3143a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fighter Pack Bundle FREE/Berserker Fighter Mecanim Animation Pack FREE/Characters using Guid(701406140bac0a448b67057afb3143a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b722a8e27e65ab6574f6d13cf8ad984') in 0.004251 seconds
+  Import took 0.007727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.065598 seconds.
+  path: Assets/Fighter Pack Bundle FREE/Berserker Fighter Mecanim Animation Pack FREE/Characters/Berserker.FBX
+  artifactKey: Guid(df7ef05fa87d48248ba181823b336391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fighter Pack Bundle FREE/Berserker Fighter Mecanim Animation Pack FREE/Characters/Berserker.FBX using Guid(df7ef05fa87d48248ba181823b336391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afc2663b4c53d232b27d19911ff7fb74') in 0.041844 seconds
+  Import took 0.046692 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000648 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.786 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1408 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 158.3 MB.
+System memory in use after: 158.4 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1870.
+Total: 2.545546 ms (FindLiveObjects: 0.309281 ms CreateObjectMapping: 0.065539 ms MarkObjects: 2.091820 ms  DeleteObjects: 0.076901 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
