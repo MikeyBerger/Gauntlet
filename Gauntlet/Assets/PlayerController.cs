@@ -10,12 +10,13 @@ public class PlayerController : MonoBehaviour
     public float RotationSpeed;
     private Rigidbody RB;
     private Animator Anim;
+    public Transform Graphic;
 
     // Start is called before the first frame update
     void Start()
     {
         RB = GetComponent<Rigidbody>();
-        Anim = GetComponent<Animator>();
+        Anim = GameObject.FindGameObjectWithTag("Graphic").GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -34,10 +35,11 @@ public class PlayerController : MonoBehaviour
             transform.Translate(Vector3.zero);
         }
         //transform.Rotate(new Vector3(Movement.x, 0, Movement.y));
-        Rotate();
+        Rotate(); //Calls the "Rotate" function
         
     }
 
+    //Rotates the player to the direction he is moving towards
     void Rotate()
     {
         Vector3 RotationDirection = new Vector3(Movement.x, 0, Movement.y);
@@ -45,7 +47,7 @@ public class PlayerController : MonoBehaviour
 
         if (RotationDirection != Vector3.zero)
         {
-            transform.forward = RotationDirection;
+            Graphic.transform.forward = RotationDirection;
             //Quaternion LookDirection = Quaternion.LookRotation(RotationDirection, Vector3.up);
             //transform.rotation = Quaternion.RotateTowards(transform.rotation, LookDirection, RotationSpeed * Time.deltaTime);
         }
