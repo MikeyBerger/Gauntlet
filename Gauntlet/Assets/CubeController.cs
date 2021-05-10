@@ -7,16 +7,23 @@ public class CubeController : MonoBehaviour
 {
     public Vector2 Movement;
     public float Speed;
+    public float DashPower;
     private Rigidbody RB;
     private Animator Anim;
     public float RotationSpeed;
-    public Transform Graphic;
+    //private Transform Graphic;
+    //public Material Mesh;
+    public PlayerInput PI;
+    public bool IsDashing;
+    
 
     // Start is called before the first frame update
     void Start()
     {
         RB = GetComponent<Rigidbody>();
-        Anim = GameObject.FindGameObjectWithTag("Graphic").GetComponent<Animator>();
+        Anim = GameObject.FindGameObjectWithTag("Graphic").GetComponentInChildren<Animator>();
+        //Anim = GetComponentInChildren<Animator>(); 
+        PI = GetComponent<PlayerInput>();
     }
 
     // Update is called once per frame
@@ -24,26 +31,35 @@ public class CubeController : MonoBehaviour
     {
         RB.velocity = new Vector3(Movement.x, 0, Movement.y) * Speed;
         Rotate();
-        AnimatePlayer();
+        //AnimatePlayer();
+        //PlayerColor();
     }
 
     void Rotate()
     {
         Vector3 RotationDirection = new Vector3(Movement.x, 0, Movement.y);
+        Vector3 NoRotation = new Vector3(0, 0, 0);
         RotationDirection.Normalize();
 
         if (RotationDirection != Vector3.zero)
         {
-            //transform.forward = RotationDirection;
-            Quaternion LookDirection = Quaternion.LookRotation(RotationDirection, Vector3.up);
+            //transform.forward = RotationDirection * Time.deltaTime ;
+            Quaternion LookDirection = Quaternion.LookRotation(RotationDirection);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, LookDirection, RotationSpeed * Time.deltaTime);
         }
 
+        /*
+        if (RotationDirection == Vector3.zero)
+        {
+            Quaternion StopLook = Quaternion.LookRotation(RotationDirection);
+            transform.rotation = transform.rotation = Quaternion.RotateTowards(transform.rotation, StopLook, 0 * Time.deltaTime);
+        }
+        */
     }
 
     void AnimatePlayer()
     {
-        if (Movement.x != 0 || Movement.y != 0)
+        if (Movement.x != 0 || Movement.y != 0 || Movement.x != 0 && Movement.y != 0)
         {
             Anim.SetBool("IsRunning", true);
         }
@@ -51,10 +67,33 @@ public class CubeController : MonoBehaviour
         {
             Anim.SetBool("IsRunning", false);
         }
+
+        if (IsDashing)
+        {
+            Anim.SetBool("IsRunning", true);
+            RB.AddForce(Vector3.forward * DashPower * Time.deltaTime);
+        }
+        else if (!IsDashing)
+        {
+            Anim.SetBool("IsRunning", false);
+        }
+    }
+
+    void PlayerColor()
+    {
+        //Mesh.color = Color.red;
     }
 
     public void OnMove(InputAction.CallbackContext ctx)
     {
         Movement = ctx.ReadValue<Vector2>();
+    }
+
+    public void OnDash(InputAction.CallbackContext ctx)
+    {
+        if (ctx.phase == InputActionPhase.Performed)
+        {
+            IsDashing = true;
+        }
     }
 }

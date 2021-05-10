@@ -14,7 +14,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "OnDash",
+                    "name": "Dash",
                     "type": "Button",
                     "id": "11f0febf-5603-412c-9ac9-8393bfabbfc5",
                     "expectedControlType": "Button",
@@ -104,7 +104,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "OnDash",
+                    "action": "Dash",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -115,7 +115,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "OnDash",
+                    "action": "Dash",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
