@@ -10,7 +10,7 @@ public class PlayerAnim : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        CC = GameObject.FindGameObjectWithTag("Player").GetComponent<CubeController>();
+        CC = GameObject.FindGameObjectWithTag("Player").GetComponentInParent<CubeController>();
         Anim = GetComponent<Animator>();
     }
 
@@ -25,5 +25,16 @@ public class PlayerAnim : MonoBehaviour
         {
             Anim.SetBool("IsRunning", false);
         }
+
+        if (CC.IsDashing)
+        {
+            Anim.SetBool("IsDashing", true);
+        }
+        else if (!CC.IsDashing)
+        {
+            Anim.SetBool("IsDashing", false);
+        }
     }
+
+
 }

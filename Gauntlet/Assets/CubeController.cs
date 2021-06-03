@@ -17,6 +17,12 @@ public class CubeController : MonoBehaviour
     public bool IsDashing;
     
 
+    IEnumerator StopDash()
+    {
+        yield return new WaitForSeconds(2);
+        IsDashing = false;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +39,21 @@ public class CubeController : MonoBehaviour
         Rotate();
         //AnimatePlayer();
         //PlayerColor();
+
+        if (IsDashing)
+        {
+            transform.Translate(new Vector3(Movement.x, 0, Movement.y) * DashPower * Time.deltaTime);
+            //RB.AddForce(new Vector3(Movement.x, 0, Movement.y) * DashPower * Time.deltaTime);
+            //IsDashing = false;
+        }
+
+        if (IsDashing && Movement.x == 0 && Movement.y == 0)
+        {
+            transform.Translate(Vector3.forward * DashPower * Time.deltaTime);
+            //RB.AddForce(Vector3.forward * DashPower * Time.deltaTime);
+            //IsDashing = false;
+            //StartCoroutine(StopDash());
+        }
     }
 
     void Rotate()
