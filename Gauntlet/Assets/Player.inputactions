@@ -19,7 +19,7 @@
                     "id": "714612ab-ebec-4f8d-ac00-94c215d1dcc1",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "Hold"
                 },
                 {
                     "name": "Move",

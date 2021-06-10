@@ -15,6 +15,7 @@ public class CubeController : MonoBehaviour
     //public Material Mesh;
     public PlayerInput PI;
     public bool IsDashing;
+    public bool IsShielding;
     
 
     IEnumerator StopDash()
@@ -35,9 +36,14 @@ public class CubeController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        RB.velocity = new Vector3(Movement.x, 0, Movement.y) * Speed;
+        if (!IsDashing && !IsShielding)
+        {
+            RB.velocity = new Vector3(Movement.x, 0, Movement.y) * Speed;
+        }
+
+        
         Rotate();
-        //AnimatePlayer();
+        AnimatePlayer();
         //PlayerColor();
 
         if (IsDashing)
@@ -49,10 +55,15 @@ public class CubeController : MonoBehaviour
 
         if (IsDashing && Movement.x == 0 && Movement.y == 0)
         {
-            transform.Translate(Vector3.forward * DashPower * Time.deltaTime);
+            transform.Translate(new Vector3(0,0,transform.rotation.y) * DashPower * Time.deltaTime);
             //RB.AddForce(Vector3.forward * DashPower * Time.deltaTime);
             //IsDashing = false;
             //StartCoroutine(StopDash());
+        }
+
+        if (IsShielding)
+        {
+            RB.velocity = Vector3.zero;
         }
     }
 
@@ -92,7 +103,7 @@ public class CubeController : MonoBehaviour
         if (IsDashing)
         {
             Anim.SetBool("IsRunning", true);
-            RB.AddForce(Vector3.forward * DashPower * Time.deltaTime);
+            //RB.AddForce(Vector3.forward * DashPower * Time.deltaTime);
         }
         else if (!IsDashing)
         {
@@ -115,6 +126,14 @@ public class CubeController : MonoBehaviour
         if (ctx.phase == InputActionPhase.Performed)
         {
             IsDashing = true;
+        }
+    }
+
+    public void OnShield(InputAction.CallbackContext ctx)
+    {
+        if (ctx.phase == InputActionPhase.Performed)
+        {
+            IsShielding = true;
         }
     }
 }
