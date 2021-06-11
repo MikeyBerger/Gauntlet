@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -16,7 +15,7 @@ public class CubeController : MonoBehaviour
     public PlayerInput PI;
     public bool IsDashing;
     public bool IsShielding;
-    
+
 
     IEnumerator StopDash()
     {
@@ -41,7 +40,6 @@ public class CubeController : MonoBehaviour
             RB.velocity = new Vector3(Movement.x, 0, Movement.y) * Speed;
         }
 
-        
         Rotate();
         AnimatePlayer();
         //PlayerColor();
@@ -63,8 +61,16 @@ public class CubeController : MonoBehaviour
 
         if (IsShielding)
         {
-            RB.velocity = Vector3.zero;
+            RB.velocity = Vector3.zero * 0;
+            Speed = 0;
+            //RB.transform.forward = Vector3.zero;
+            RB.isKinematic = true;
         }
+        else if (!IsShielding)
+        {
+            RB.isKinematic = false;
+        }
+
     }
 
     void Rotate()
@@ -91,13 +97,14 @@ public class CubeController : MonoBehaviour
 
     void AnimatePlayer()
     {
-        if (Movement.x != 0 || Movement.y != 0 || Movement.x != 0 && Movement.y != 0)
-        {
-            Anim.SetBool("IsRunning", true);
-        }
-        else if (Movement.x == 0 && Movement.y == 0)
+        if (Movement.x == 0 && Movement.y == 0)
         {
             Anim.SetBool("IsRunning", false);
+
+        }
+        else if (Movement.x != 0 || Movement.y != 0)
+        {
+            Anim.SetBool("IsRunning", true);
         }
 
         if (IsDashing)
@@ -135,5 +142,11 @@ public class CubeController : MonoBehaviour
         {
             IsShielding = true;
         }
+
+        if (ctx.phase == InputActionPhase.Canceled)
+        {
+            IsShielding = false;
+        }
+
     }
 }

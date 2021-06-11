@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ShieldScript : MonoBehaviour
@@ -23,6 +21,12 @@ public class ShieldScript : MonoBehaviour
         if (CC.IsShielding == true)
         {
             MR.enabled = true;
+            CC.Speed = 0;
+        }
+        else if (CC.IsShielding == false)
+        {
+            MR.enabled = false;
+            CC.Speed = 5;
         }
 
         if (CC.PI.playerIndex == 0)
