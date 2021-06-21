@@ -53,7 +53,7 @@ public class CubeController : MonoBehaviour
 
         if (IsDashing && Movement.x == 0 && Movement.y == 0)
         {
-            transform.Translate(new Vector3(0,0,transform.rotation.y) * DashPower * Time.deltaTime);
+            //transform.Translate(new Vector3(0,0,transform.rotation.y) * DashPower * Time.deltaTime);
             //RB.AddForce(Vector3.forward * DashPower * Time.deltaTime);
             //IsDashing = false;
             //StartCoroutine(StopDash());
