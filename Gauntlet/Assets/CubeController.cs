@@ -43,6 +43,7 @@ public class CubeController : MonoBehaviour
         Rotate();
         AnimatePlayer();
         //PlayerColor();
+        ChangeTag();
 
         if (IsDashing)
         {
@@ -121,6 +122,26 @@ public class CubeController : MonoBehaviour
     void PlayerColor()
     {
         //Mesh.color = Color.red;
+    }
+
+    void ChangeTag()
+    {
+        if (PI.playerIndex == 0)
+        {
+            transform.gameObject.tag = "Player1";
+        }
+        else if (PI.playerIndex == 1)
+        {
+            transform.gameObject.tag = "Player2";
+        }
+        else if (PI.playerIndex == 2)
+        {
+            transform.gameObject.tag = "Player3";
+        }
+        else if (PI.playerIndex == 3)
+        {
+            transform.gameObject.tag = "Player4";
+        }
     }
 
     public void OnMove(InputAction.CallbackContext ctx)

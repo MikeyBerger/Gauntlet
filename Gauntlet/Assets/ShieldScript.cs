@@ -10,7 +10,7 @@ public class ShieldScript : MonoBehaviour
     void Start()
     {
         MR = GetComponent<MeshRenderer>();
-        CC = GameObject.FindGameObjectWithTag("Player").GetComponentInParent<CubeController>();
+        CC = GetComponentInParent<CubeController>();
         Mat = GetComponent<Material>();
         MR.enabled = false;
     }
@@ -29,20 +29,20 @@ public class ShieldScript : MonoBehaviour
             CC.Speed = 5;
         }
 
-        if (CC.PI.playerIndex == 0)
+        if (CC.PI.playerIndex == 0 && CC.gameObject.CompareTag("Player1"))
         {
             //Mat.color = Color.red;
             MR.material.color = Color.red;
         }
-        else if (CC.PI.playerIndex == 1)
+        else if (CC.PI.playerIndex == 1 && CC.gameObject.CompareTag("Player2"))
         {
             MR.material.color = Color.blue;
         }
-        else if (CC.PI.playerIndex == 2)
+        else if (CC.PI.playerIndex == 2 && CC.gameObject.CompareTag("Player3"))
         {
             MR.material.color = Color.green;
         }
-        else if (CC.PI.playerIndex == 3)
+        else if (CC.PI.playerIndex == 3 && CC.gameObject.CompareTag("Player4"))
         {
             MR.material.color = Color.yellow;
         }
