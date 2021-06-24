@@ -1338,6 +1338,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerObjectV5
       objectReference: {fileID: 0}
+    - target: {fileID: 4415547465327463757, guid: 60c40e23ecb8f4522a95f68c9602a3a7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4415547465327463758, guid: 60c40e23ecb8f4522a95f68c9602a3a7, type: 3}
+      propertyPath: m_Constraints
+      value: 68
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60c40e23ecb8f4522a95f68c9602a3a7, type: 3}
 --- !u!1001 &4563756794492529399

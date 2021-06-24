@@ -133,6 +133,8 @@ public class CubeController : MonoBehaviour
         else if (PI.playerIndex == 1)
         {
             transform.gameObject.tag = "Player2";
+            PI.actions.FindActionMap("CubeMap2").Enable();
+            //PI.actions.FindActionMap("CubeMap").Disable();
         }
         else if (PI.playerIndex == 2)
         {
