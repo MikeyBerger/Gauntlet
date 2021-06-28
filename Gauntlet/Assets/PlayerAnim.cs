@@ -8,7 +8,7 @@ public class PlayerAnim : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        CC = GameObject.FindGameObjectWithTag("Player").GetComponentInParent<CubeController>();
+        CC = GetComponentInParent<CubeController>();
         Anim = GetComponent<Animator>();
     }
 

@@ -9,7 +9,7 @@
                     "name": "Move",
                     "type": "Value",
                     "id": "f9ec79b7-b812-4785-8f69-b4322ca70d2d",
-                    "expectedControlType": "Vector3",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": ""
                 },
@@ -149,9 +149,9 @@
             "actions": [
                 {
                     "name": "Shield",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "b5b4dd1d-8e14-4600-a206-a5531a2a3951",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "Hold(duration=0.01,pressPoint=0.01)"
                 },
